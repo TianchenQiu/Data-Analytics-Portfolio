@@ -109,16 +109,12 @@ Strongest observed hours by conversion rate:
 | 21 | 29,976 | 867 | 2.89% |
 | 17 | 34,988 | 987 | 2.82% |
 
-## Caveats
+## Conclusion
 
-- Treatment and control group sizes are imbalanced.
-- Weekday and hour findings are exploratory associations, not causal proof.
-- `total_ads` may reflect delivered exposure after assignment, so it should not be treated as a clean pre-treatment feature.
-- Campaign cost and conversion value are unavailable, so this analysis estimates conversion impact but not ROI.
+- The ad group converted at a higher rate than the PSA control group.
+- Weekday and hour appear associated with conversion rate.
+- Monday and Tuesday show the strongest weekday conversion rates in the overall dataset.
+- Late afternoon and evening hours, especially around 15:00-21:00, rank highly by conversion rate.
+- These timing patterns are useful for follow-up planning, but they should be treated as exploratory because timing was not the randomized        treatment in this A/B test.
 
-## Next Steps
 
-- Add a confidence interval for the absolute conversion-rate lift.
-- Create final portfolio charts for conversion rate, weekday performance, and hourly performance.
-- Test whether concentrating delivery on stronger weekdays or hours improves conversion.
-- Translate incremental conversions into revenue or profit impact if conversion value and campaign cost become available.
